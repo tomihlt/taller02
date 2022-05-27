@@ -14,13 +14,20 @@ public class Factura {
 	private Responsable responsable;
 	private Proveedor proveedor;
 	private Date fecha;
-
+	
 	public Factura() {
 
 		bienes = new ArrayList<Bien>();
 
 	}
-
+	
+	public Factura(Responsable responsable, Proveedor proveedor, Double monto_total) {
+		
+		this(responsable,proveedor);
+		this.monto_total = monto_total;
+		
+	}
+	
 	public Factura(Responsable responsable, Proveedor proveedor) {
 
 		this();

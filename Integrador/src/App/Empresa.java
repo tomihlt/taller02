@@ -26,6 +26,14 @@ public class Empresa {
 		facturas = new ArrayList<Factura>();
 	}
 	
+	public Empresa(List<Proveedor> p, List<Bien> b, List<Factura> f) {
+		
+		proveedores = p;
+		bienes = b;
+		facturas = f;
+		
+	}
+	
 	public void calcularMontoTotalFacturas() {
 		
 		for(Factura f : facturas)
